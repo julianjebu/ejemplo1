@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div > <!-- titulo -->
+        <h1>
+            Tablas de multiplicar
+        </h1>
+        <h2 id="titulo">
+            
+        </h1>
+    </div>
+    <div id="tablaResultado"><!-- tabla resultado -->
+
+        
+    </div>
+
+    <script >
+
+const titulo = document.getElementById("titulo");
+const tablaResultado = document.getElementById("tablaResultado");
+let tabla = parseInt(prompt("Inngresa numero"));
+titulo.innerHTML = "Tabla del " + tabla + " con for " + "<br>";
+
+let resultado1 = "";
+for (let index = 0; index <= 10; index++) {
+  resultado1 += tabla + " x " + index + " = " + tabla * index + "<br>";
+}
+
+tablaResultado.innerHTML += resultado1 + `<h2> tabla del ${tabla} con while</h3>`;
+
+let contador = 0;
+let resultado2 = "";
+while (contador <= 10) {
+  resultado2 += tabla + " x " + contador + " = " + tabla * contador + "<br>";
+  contador++;
+}
+
+tablaResultado.innerHTML += resultado2 + `<h2> tabla del ${tabla} con do while</h3>`;
+
+let contador2 = 0;
+let resultado3 = "";
+do {
+  resultado3 += tabla + " x " + contador2 + " = " + tabla * contador2 + "<br>";
+  contador2++;
+} while (contador2 < 10);
+
+tablaResultado.innerHTML += resultado3 + "<br>";
+
+    </script>
+</body>
+</html>

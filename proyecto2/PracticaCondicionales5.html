@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jugardenuevo = true;
+        while(jugardenuevo){
+            let jugadausuario = prompt("elige piedra,papel o tijera").toLowerCase();
+            let usuariogano = false;
+            while(!usuariogano){
+                let numeroaleatorio = Math.floor(Math.random()*3)+1; //numero aleatorio
+                let jugadamaquina; //contiene las opciones de la maquina
+
+                if(numeroaleatorio===1){
+                    jugadamaquina="piedra";
+
+                }else if(numeroaleatorio===2){
+                    jugadamaquina="papel";
+                }else{
+                    jugadamaquina="tijera";
+                }
+                console.log("jugadadelamaquina",jugadamaquina);
+
+                switch(jugadausuario){
+                    case "piedra":
+                    if(jugadamaquina==="piedra"){
+                        alert("hay empate, la maquina eligio piedra");
+                    }else if (jugadamaquina==="papel"){
+                        alert("perdiste, la maquina eligio papel");
+                    }else {
+                        alert("ganaste la maquina eligio tijera");
+                        usuariogano=true
+                    }
+                      break;  
+                      case "papel":
+                      if(jugadamaquina==="piedra"){
+                        alert("ganaste, la maquina eligio piedra");
+                      }else if(jugadamaquina==="papel"){
+                        alert("empate, la maquina eligio papel");
+                      }else{
+                        alert("perdiste,la maquina eligio tijera");
+                        usuariogano=false
+                      }
+                      break;
+                      case "tijera": 
+                      if(jugadamaquina==="piedra"){
+                        alert("perdiste, la maquina eligio piedra");
+                      }else if(jugadamaquina==="papel"){
+                        alert("ganaste, la maquina eligio papel");
+                      }else{
+                        alert("empate,la maquina eligio tijera");
+                        usuariogano= false
+                      }
+                }
+            
+            }
+        }
+    </script>
+</body>
+</html>

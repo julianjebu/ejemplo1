@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+</head>
+<body>
+    
+    <form action="/submit-form" method="post">
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo:</label>
+                <input type="email" required>
+            </div>
+            
+            <div>
+                <label for="selector">Motivo de contacto:</label>
+                <select name="selector" id="selector" required>
+                    <option value="">Solicitar cita</option>
+                    <option value="">Cancelar cita</option>
+                    <option value="">Cambiar fecha</option>
+                </select>
+            </div>
+
+            <textarea name="comentario" id="comentario" rows="4" cols="50" placeholder="Agregar comentario"></textarea>
+            <input type="submit">
+        </fieldset>
+    </form>
+    
+    <table border ="1">
+        
+            <thead>
+              <tr>
+              <td scope="row">Nobre</td>
+                <td>Edad</td>
+                <td>Deporte</td>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+              <td>Juan</td>
+                <td>15</td>
+                <td>Baloncesto en burro</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+              <td>Jimeno</td>
+                <td>18</td>
+                <td>Chessboxing</td>
+              </tr>
+              <tr>
+              <td>Gas</td>
+                <td>12</td>
+                <td>Hockey subacuático</td>
+              </tr>
+            </tbody>
+          
+    </table>
+
+</body>
+</html>

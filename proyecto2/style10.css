@@ -1,0 +1,100 @@
+html{
+
+    font: size 16px;;
+
+}
+
+img{
+    height: 200px;
+    width: 200px;
+
+}
+
+h1{
+
+    font-size: 2rem;/* 32px 2 veces el tamaña de fuente raiz */ 
+    margin-bottom: 1rem;/* 16px */
+
+
+}
+
+p{
+    font-size: 1em;/* Tamaño de fuente del el elemento padre */
+    margin : 1em; /*Espaio alreddor del parrafo  */
+
+}
+
+.especial{
+
+    font-size: 1.25rem;/* 20px */
+    margin: 1.5em;/* Espaciodo aumentado */
+
+}
+
+/* ------------------Para el otro html --------------------------- */
+
+@media(max-windth:600px){
+    
+    .contenedor{
+
+        flex-direction: column;
+    }
+
+}
+
+@media(orientation:portrait){
+
+    .contenedor{
+
+        background-color: lightblue; /* Cambiar para orientacion vertical */
+
+    }
+
+}
+
+@media(min-resolution:2dppx){
+
+    .imagen{
+
+        background-image: url(./img/jita.png);
+
+    }
+   
+}
+
+/* ----------------------otra parte-------------------------------------------- */
+
+.item{
+
+    background-color: lightcoral;
+    padding: 20px;
+    flex:1;
+}
+
+@media(max-width:600px){
+
+    .contenedor{
+
+        flex-direction:column;/* cambiar a colmna en patallas pequeñas */
+
+    }
+}
+
+@media(max-width:400px){
+
+    .item{
+
+        background-color: rgb(114, 91, 124);
+
+    }
+}
+
+@media(min-width:200px){
+
+    .contenedor{
+       background-color: blue;
+       
+
+    }
+    
+}

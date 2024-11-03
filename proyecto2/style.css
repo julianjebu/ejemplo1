@@ -1,0 +1,73 @@
+* { /* sirve para controlar el padin y margen del body */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* 
+div{
+    margin: 65px;
+   
+    position: relative;
+    top: 100px; /* afecta lo posicion vertical de un elemento 
+    left: 1rem;  /* afecta la posicion horizontal de un elemento 
+    right: 100px;/* afecta la posicion horizontal en un elemento posiconado si no tes posisionado no sirve 
+    bottom: 2px;  /* lo mimso que el de arriba pero en vertical si no esta posicionado no sirve mi viejo 
+}
+
+div{
+    display: block;
+}
+ */
+
+ div{
+    display: inline-block;
+    width: 200px; /* establece el ancho de un elemento */
+    height: 200px; /* altura de un elemento */
+/*  top  : 500px ;/* arriba 
+    right: 100px; /* izquierda 
+    bottom: 250px; /* abajo 
+    left: 200px /*derecha  */
+
+ }
+
+
+ .cuadrado1{
+
+    position: fixed; /*fija la posicion de un elemento asi se mueva la pantalla */
+    background-color: rgb(11, 18, 24);
+    top: 60px;   
+
+
+ }
+
+.cuadrado2{
+
+    position: relative;
+    left: 300px;
+    top: 900px;
+    background: blue;
+    
+    
+    
+
+}
+
+.cuadrado3{
+    position: static;
+    width: 200px;
+    height: 200px;
+    color:rgb(71, 124, 18)
+
+}
+
+
+.rectangulo{
+
+    width: 300px;
+    height: 3000px;
+    background: red;
+
+
+}

@@ -1,0 +1,89 @@
+
+.contenedor1{
+
+    display: flex;
+    border: 6px solid black;
+    gap: 20px 20px;
+    background-color: aqua;
+    
+}
+
+.contenedor2{
+
+    display: flex; /* el contenerdor principal va ser mas dinamico con los elementos  */
+    flex-direction: row; /* ajustamos la alineacion de los elementos en horizontal */
+    justify-content: center; /* con justify content lo relaciono con row de horizontal */
+    border: 6px solid black;
+    gap: 40px 40px;
+    margin:20px;
+    background-color: aqua;
+
+
+}
+
+.contenedor3{
+
+    display: flex;
+    flex-direction: column; /* ajustamos alineacion en vertical */
+    align-items: end;/* alingn-items lo relaciono con column */
+    border: 6px solid black;
+    gap: 40px 40px;
+    margin: 20px;
+    background-color: aqua;
+
+
+}
+
+.contenedor4{
+
+    display:flex;
+    flex-wrap: nowrap;/* cuando le pongo flex-warp:nowrap  no tiene ajuste*/
+    border: 6px solid black;
+    gap: 40x 40px;
+    margin: 20px;
+    background-color: aqua;
+
+}
+
+.contenedor5{
+
+    display:flex;
+    flex-wrap: wrap;/* ajusto en variaas lineas */
+    border: 6px solid black;
+    gap: 40px 40px;
+    margin: 20px;
+    background-color: aqua;
+
+}
+
+.contenedor6{
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;/* ajusta en varias lineas cuando la pantalla es manipulada */
+justify-content: space-evenly;/* este me da un espaciado igual entre los elementos */
+gap: 40px 40px;
+margin: 20px;
+background-color: aqua;    
+}
+
+.contenedor7{
+
+    display: flex;
+    flex-direction: column;
+    align-items:stretch; /* ailineacion de items por columna por defecto osea por defecto  yo me entiendo jaja xd */
+    gap: 40px 40px;
+    margin: 20px;
+    background-color: aqua;  
+
+}
+
+.contenedor8{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 40px 40px;
+    margin: 20px;
+    background-color: aqua;  
+}

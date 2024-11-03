@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.elemento_flex {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    flex-basis: 200px;
+    max-width: 300px; /* Limita el tamaño máximo de las cajas */
+}
+
+
+.contenedor_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas flexibles */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.elemento_grid {
+    background-color: #FF5733;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}

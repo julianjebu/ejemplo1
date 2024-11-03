@@ -1,0 +1,53 @@
+/* Estilo para el título */
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    }
+    /* Cuadro al que se le cambiará el color */
+    #cuadro {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(47, 30, 143); /*Color inicial del cuadro */
+    margin: 20px auto;
+    border: 2px solid black;
+    }
+    /* Estilo para los botones */
+    button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    }
+    #rojo {
+    background-color: red;
+    color: white;
+    }
+    #verde {
+    background-color: green;
+    color: white;
+    }
+    #azul {
+    background-color: blue;
+    color: white;}
+
+    #aleatorio {
+        background-color: rgb(37, 37, 39);
+        color: white;}
+
+    .rojo{
+        background-color: red;
+    }
+    .verde{
+        background-color: rgb(20, 124, 55);
+    }
+    .azul{
+        background-color: rgb(77, 22, 228);
+    }
+
+    .colorInput{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 250px;
+    }
